@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.5.22)  28 AUG 2016 19:46
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.5.22)  28 AUG 2016 21:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -941,12 +941,6 @@ File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 LaTeX Font Warning: Font shape `EU1/Lato-Bol(0)/bx/n' undefined
 (Font)              using `EU1/Lato-Bol(0)/m/n' instead on input line 84.
 
-Invalid UTF-8 byte or sequence at line 92 replaced by U+FFFD.
-Missing character: There is no � in font [fonts/raleway/Raleway-Medium]/OT:scri
-pt=latn;language=DFLT;mapping=tex-text;!
-Invalid UTF-8 byte or sequence at line 98 replaced by U+FFFD.
-Missing character: There is no � in font [fonts/raleway/Raleway-Medium]/OT:scri
-pt=latn;language=DFLT;mapping=tex-text;!
 \g__fontspec_family_Lato-Reg_int=\count152
 .................................................
 . fontspec info: "defining-font"
@@ -960,43 +954,24 @@ pt=latn;language=DFLT;mapping=tex-text;!
 . - 'small caps'  (m/sc) with NFSS spec.: 
 .................................................
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 234.
+(Font)              <12> on input line 240.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 234.
+(Font)              <8> on input line 240.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 234.
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'Lato-Lig(2)' created for font 'Lato-Lig' with options
-. [Mapping=tex-text,Ligatures=TeX,Color=primary,Path =
-. fonts/lato/,VerticalPosition=Superior].
-. 
-. This font family consists of the following NFSS series/shapes:
-. - 'normal' (m/n) with NFSS spec.:
-. <->"[fonts/lato/Lato-Lig]/OT:script=latn;language=DFLT;mapping=tex-text;mappi
-ng=tex-text;+sups;color=2B2B2BFF
-. ;"
-. - 'small caps'  (m/sc) with NFSS spec.: 
-.................................................
+(Font)              <6> on input line 240.
 
-Overfull \hbox (67.78638pt too wide) in paragraph at lines 234--245
+Overfull \hbox (17.02635pt too wide) in paragraph at lines 254--261
 [][] 
  []
 
-
-Overfull \hbox (27.88037pt too wide) in paragraph at lines 252--259
-[][] 
- []
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 261.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 267.
 [1
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 261.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 267.
  (./jackie_loven_resume.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 261.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 261.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 267.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 267.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1005,15 +980,15 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 261.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 267.
  ) 
 Here is how much of TeX's memory you used:
- 22397 strings out of 493591
- 402196 string characters out of 6143546
- 434270 words of memory out of 5000000
- 25611 multiletter control sequences out of 15000+600000
- 7980 words of font info for 68 fonts, out of 8000000 for 9000
+ 22387 strings out of 493591
+ 401612 string characters out of 6143546
+ 434244 words of memory out of 5000000
+ 25605 multiletter control sequences out of 15000+600000
+ 7964 words of font info for 66 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 53i,9n,107p,10360b,555s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,8n,107p,10360b,538s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on jackie_loven_resume.pdf (1 page).
