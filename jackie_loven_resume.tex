@@ -1,22 +1,22 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 % Deedy - One Page Two Column Resume
 % LaTeX Template
 % Version 1.1 (30/4/2014)
-%
+% 
 % Original author:
 % Debarghya Das (http://debarghyadas.com)
-%
+% 
 % Original repository:
 % https://github.com/deedydas/Deedy-Resume
-%
+% 
 % IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
-%
+% 
 % This template uses several fonts not included with Windows/Linux by
 % default. If you get compilation errors saying a font is missing, find the line
 % on which the font is used and either change it to a font included with your
 % operating system or comment the line out to use the default font.
 % 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 % 
 % TODO:
 % 1. Integrate biber/bibtex for article citation under publications.
@@ -25,8 +25,8 @@
 % 4. Add location/address information
 % 5. Merge OpenFont and MacFonts as a single sty with options.
 % 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% 
 % CHANGELOG:
 % v1.1:
 % 1. Fixed several compilation bugs with \renewcommand
@@ -34,249 +34,269 @@
 % 3. Added Last Updated
 % 4. Move Title styling into .sty
 % 5. Commented .sty file.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% 
 % Known Issues:
 % 1. Overflows onto second page if any column's contents are more than the
 % vertical limit
 % 2. Hacky space on the first bullet point on the second column.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 \documentclass[]{jackie_loven_resume}
 
 \usepackage{framed}
 \def \arraystretch{0.1}
+\renewcommand{\baselinestretch}{1.2} 
 
 \begin{document}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     LAST UPDATED DATE
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\lastupdated
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% 
+% LAST UPDATED DATE
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% \lastupdated
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     TITLE NAME
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% 
+% TITLE NAME
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 
-\namesection{Jackie}{Loven}{ \urlstyle{same}\url{http://jackieloven.com} \\
-jackieloven@gmail.com
+\namesection{Jackie}{Loven}{
+  \centering
+  \urlstyle{same}\url{http://jackieloven.com} \\
+  jackieloven@gmail.com
+  
 }
+t
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     COLUMN ONE
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% 
+% COLUMN ONE
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 \begin{minipage}[t]{0.33\textwidth} 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EDUCATION
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+  % EDUCATION
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
-\section{Education} 
-\begin{tabular}{|p{10cm}}
-\subsection{Cornell University}
-\descript{BS, Materials Science \& Eng.}
-\location{Expected Dec. 2017}
+  \section{Education} 
+  \begin{tabular}{|l}
+    \begin{minipage}{\textwidth}
+      \subsection{Cornell University}
+      \descript{BS, Materials Science \& Eng.}
+      \location{Expected Dec. 2017}
 
-\sectionsep
-
-
-\subsection[WPI]{Worcester Polytechnic\\Institute}
-\descript{Last year of high school}
-\location{2013 -- 2014}
-\sectionsep
+      \sectionsep
 
 
-\subsection[MAMS]{{Mass Academy of}\\ {Math \& Science}}
-\descript{Advanced secondary school}
-\location{2012 -- 2013}
-\end{tabular}
-\sectionsep
+      \subsection[WPI]{Worcester Polytechnic\\Institute}
+      \descript{Last year of high school}
+      \location{2013 -- 2014}
+      \sectionsep
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     LINKS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{See My Projects} 
-\begin{tabular}{|p{10cm}}
-github.com\// \href{https://github.com/jLoven}{\custombold{jLoven}} \\
-\href{http://jackieloven.com}{\custombold{jackieloven.com}}
-\end{tabular}
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     COURSEWORK
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Coursework}
-\begin{tabular}{|p{10cm}}
-\subsection{Cornell}
-%\location{Cornell}
-Java \\
-Python \\
-Aerosols and Colloids \\
-Electrical Properties of Mat'ls \\
-Mechanical Properties of Mat'ls \\
-Kinetics and Diffusion
-\sectionsep
-
-\subsection{WPI}
-Physics \\
-Calculus
-%{\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst) }}} \\
-\end{tabular}
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SKILLS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Skills}
-\begin{tabular}{|p{10cm}}
-\subsection{Programming}
-\location{Proficient:}
-Java \textbullet{}  Matlab \textbullet{} HTML \//  CSS \\
-\location{Used before:}
-Python \textbullet{} JavaScript (Ext JS)\\
-SQL \textbullet{}  Android
-\sectionsep
+      \subsection[MAMS]{{Mass Academy of}\\ {Math \& Science}}
+      \descript{Advanced secondary school}
+      \location{2012 -- 2013}
+    \end{minipage}
+  \end{tabular}
+  \sectionsep
 
 
-\subsection{3D Printing \& Design}
-SketchUp \textbullet{} iMovie \textbullet{} GIMP \\
-Adobe Premiere
-\sectionsep
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+  % LINKS
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
-\subsection{Tools}
-Eclipse \// IBM RSA \textbullet{} Interana \\
-Arduino \textbullet{} Android Studio
-\end{tabular}
-\sectionsep
+  \section{See My Projects} 
+  \begin{tabular}{|l}
+    \begin{minipage}{\textwidth}
+      github.com\// \href{https://github.com/jLoven}{\custombold{jLoven}} \\
+      \href{http://jackieloven.com}{\custombold{jackieloven.com}}
+    \end{minipage}
+  \end{tabular}
+  \sectionsep
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+  % COURSEWORK
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+  \section{Coursework}
+  \begin{tabular}{|l}
+    \begin{minipage}{\textwidth}
+      \subsection{Cornell}
+      % \location{Cornell}
+      Java \\
+      Python \\
+      Aerosols and Colloids \\
+      Electrical Properties of Materials \\
+      Mechanical Properties of Materials \\
+      Kinetics and Diffusion
+      \sectionsep
+
+      \subsection{WPI}
+      Physics \\
+      Calculus
+      % {\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst) }}} \\
+    \end{minipage}
+  \end{tabular}
+  \sectionsep
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+  % SKILLS
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+  \section{Skills}
+  \begin{tabular}{|l}
+    \begin{minipage}{\textwidth}
+      \subsection{Programming}
+      \location{Proficient:}
+      Java \textbullet{}  Matlab \textbullet{} HTML \//  CSS \\
+      \location{Worked with:}
+      Python \textbullet{} JavaScript (Ext JS)\\
+      SQL \textbullet{} Android
+      \sectionsep
 
 
-%\subsection{Other}
-%500hrs community service, Holy Trinity Nursing Home \textbullet{} Taught 3D-printing \& programming classes to middle schoolers
-%\sectionsep
+      \subsection{3D Printing \& Design}
+      SketchUp \textbullet{} iMovie \textbullet{} GIMP \\
+      Adobe Premiere
+      \sectionsep
 
-%\subsection{Hackathons}
-%Y-Hack \textbullet{}  Hack@Brown \textbullet{} PennApps \textbullet{} MIT Blueprint \textbullet{} Bitcamp \textbullet{} BigRed\///Hacks
-%\sectionsep 
+      \subsection{Tools}
+      Eclipse \// IBM RSA \textbullet{} Interana \\
+      Arduino \textbullet{} Android Studio
+    \end{minipage}
+  \end{tabular}
+  \sectionsep
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     COLUMN TWO
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \subsection{Other}
+% 500hrs community service, Holy Trinity Nursing Home \textbullet{} Taught 3D-printing \& programming classes to middle schoolers
+% \sectionsep
+
+% \subsection{Hackathons}
+% Y-Hack \textbullet{}  Hack@Brown \textbullet{} PennApps \textbullet{} MIT Blueprint \textbullet{} Bitcamp \textbullet{} BigRed\///Hacks
+% \sectionsep 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% 
+% COLUMN TWO
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 \end{minipage} 
 \hfill
 \begin{minipage}[t]{0.66\textwidth} 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     PROFESSIONAL EXPERIENCE
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+  % PROFESSIONAL EXPERIENCE
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
-\section{Professional Experience}
-\begin{tabular}{|p{12cm}}
+  \section{Professional Experience}
+  \begin{tabular}{|l}
+    \begin{minipage}{\textwidth}
+      \runsubsection{Sonos} \descript{| Data Analytics Intern} \location{June
+        2016 – Aug 2016}
+     % \vspace{\topsep} % Hacky fix for awkward extra vertical space
+      \begin{tightemize}
+      \item Wrote and optimized code to analyze previously unused temperature
+        and volume data from millions of speakers (Java)
+      \item Analyzed previously unused humidity, acceleration, and temperature
+        data from product transportation routes
+      \item Presented data visually to other teams (Interana)
+      \end{tightemize}
+      \sectionsep
 
-\runsubsection{Sonos}
-\descript{| Data Analytics Intern}
-\location{June 2016 – Aug 2016}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}
-\item Wrote and optimized code to analyze previously unused temperature and volume data from millions of speakers (Java)
-\item Analyzed previously unused humidity, acceleration, and temperature data from product transportation routes
-\item Presented data visually to other teams (Interana)
-\end{tightemize}
-\sectionsep
-
-\runsubsection{Travelers Insurance}
-\descript{| Software Engineering Intern}
-\location{June 2015 – Aug 2015}
-\begin{tightemize}
-\item Added backend functionality for accessing documents in database (Java, SQL)
-\item Added custom UI functionality for viewing a table of insurance info and seeing previous versions of documents (JavaScript)
-\item Created and ran unit tests for existing code, found and fixed bug in existing code (Java)
-\end{tightemize}
-\end{tabular}
-\sectionsep
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%      ENGINEERING EXPERIENCE
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Engineering Experience}
-\begin{tabular}{|p{12cm}}
-\runsubsection{Klasp}
-\descript{| Jewelry Clasp for Loss of Hand Dexterity}
-\location{3D-printing with embedded magnets}
-Designed and 3D-printed a novel magnet-based jewelry clasp for arthritic users. Presented at the 2013 Easter Seals Assistive Technology Expo.
-\sectionsep
-
-\runsubsection{Zu}
-\descript{| Device for Easy Earphone Storage}
-\location{3D-printing}
-Designed, 3D-printed, and sold a novel and cheap device for tangle-free earphone storage.
-\href{https://youtu.be/2cVlB-0IW54}{\custombold{https://youtu.be/2cVlB-0IW54}}
-\end{tabular}
-\sectionsep
+      \runsubsection{Travelers Insurance} \descript{| Software Engineering
+        Intern} \location{June 2015 – Aug 2015}
+      \begin{tightemize}
+      \item Added backend functionality for accessing documents in database
+        (Java, SQL)
+      \item Added custom UI functionality for viewing a table of insurance info
+        and seeing previous versions of documents (JavaScript)
+      \item Created and ran unit tests for existing code, found and fixed bug in
+        existing code (Java)
+      \end{tightemize}
+    \end{minipage}
+  \end{tabular}
+  \sectionsep
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     RESEARCH
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Research Experience}
-\begin{tabular}{|p{12cm}}
-\runsubsection{Cornell Hanrath Energy Lab}
-\descript{| Undergraduate Researcher}
-\location{January 2016 – May 2016}
-%\vspace{\topsep} % Hacky fix for awkward extra vertical space
-Implemented genetic algorithms in MATLAB to discover and evaluate novel, more efficient solar cell designs. Publication in progress.
-\end{tabular}
-\sectionsep
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+  % ENGINEERING EXPERIENCE
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Other
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \section{Engineering Experience}
+  \begin{tabular}{|l}
+    \begin{minipage}{\textwidth}
+      \runsubsection{Klasp} \descript{| Jewelry Clasp for Loss of Hand
+        Dexterity} \location{3D-printing with embedded magnets} Designed and
+      3D-printed a novel magnet-based jewelry clasp for arthritic users.
+      Presented at the 2013 Easter Seals Assistive Technology Expo.
+      \sectionsep
 
-\section{Other Projects} 
-\location{See github.com/jLoven, jackieloven.com}
+      \runsubsection{Zu} \descript{| Device for Easy Earphone Storage}
+      \location{3D-printing} Designed, 3D-printed, and sold a novel and cheap
+      device for tangle-free earphone storage.
+      \href{https://youtu.be/2cVlB-0IW54}{\custombold{https://youtu.be/2cVlB-0IW54}}
+    \end{minipage}
+  \end{tabular}
+  \sectionsep
 
-\begin{tabular}{rll}
-&  Android app for patients to contact nurses nonverbally (see site)\\
-&  Desktop app to create Java enum given spreadsheet (see site)\\
-&  Soft earphone attachment to better fit human ear\\
-&  3D-typeface for 3D-printer to make realistic calligraphy (see site)\\
-&  Over 500 hours of community service at a nursing home
-\end{tabular}
-\sectionsep
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     AWARDS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+  % RESEARCH
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
-\section{Honors and Awards} 
-\begin{tabular}{rll}
-2016, 2014	   & ABI Scholarship to attend Grace Hopper Conference \\
-%2015              & Microsoft Scholarship at Grace Hopper Conference 
-2014              & Shapeways founder endorsed beginner 3D-printing guide
-%2013              & My Android AppInventor manual presented at MassCUE 
-\end{tabular}
-\sectionsep
+  \section{Research Experience}
+  \begin{tabular}{|l}
+    \begin{minipage}{\textwidth}
+      \runsubsection{Cornell Hanrath Energy Lab} \descript{| Undergraduate
+        Researcher} \location{January 2016 – May 2016}
+      % \vspace{\topsep} % Hacky fix for awkward extra vertical space
+      Implemented genetic algorithms in MATLAB to discover and evaluate novel,
+      more efficient solar cell designs. Publication in progress.
+    \end{minipage}
+  \end{tabular}
+  \sectionsep
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+  % Other
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+  \section{Other Projects} 
+  \location{See github.com/jLoven \quad \// \quad jackieloven.com}
+
+  \begin{tabular}{rll}
+    &  Android app for patients to contact nurses nonverbally (see site)\\
+    &  Desktop app to create Java enum given spreadsheet (see site)\\
+    &  Soft earphone attachment to better fit human ear\\
+    &  3D-typeface for 3D-printer to make realistic calligraphy (see site)\\
+    &  Over 500 hours of community service at a nursing home
+  \end{tabular}
+  \sectionsep
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+  % AWARDS
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+  \section{Honors and Awards} 
+  \begin{tabular}{rll}
+    2016, 2014	   & ABI Scholarship to attend Grace Hopper Conference \\
+    % 2015              & Microsoft Scholarship at Grace Hopper Conference 
+                          2014              & Shapeways founder endorsed beginner 3D-printing guide
+                          % 2013              & My Android AppInventor manual presented at MassCUE 
+  \end{tabular}
+  \sectionsep
 
 
 
